@@ -1,0 +1,330 @@
+/**
+*   @package hrscrolltop
+*
+*   HR Scroll Top Admin Styles
+*/
+
+/* Variable */
+:root{
+    --primaryColor: #1abc9c;
+    --secondaryColor: #ccc;
+    --whiteColor: #fff;
+    --blackColor: #000;
+}
+
+/* HR Scroll Top Option CSS */
+.hrst-option{
+    padding: 20px;
+    background: var(--whiteColor);
+    margin: 20px 20px 20px 0;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.hrst-option a:focus{
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+/* HR Scroll Top Form Style */
+.hrst-option .hrst-option-form{
+    -webkit-box-shadow: 0 0 8px var(--secondaryColor);
+            box-shadow: 0 0 8px var(--secondaryColor);
+    padding: 20px;
+    width: 60%;
+    float: left;
+    border-radius: 10px;
+}
+.hrst-option-form h2.hrst-admin-title,
+.hrst-author .hrst-author-title{
+    margin-top: 0;
+    font-size: 25px;
+    border-left: 4px solid var(--primaryColor);
+    height: 27px;
+    padding: 5px 0 0 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.hrst-option .hrst-option-form p,
+.hrst-option .hrst-option-form label{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: .1px;
+    display: block;
+    margin-bottom: 2px;
+}
+.hrst-option .hrst-option-form label.icon-left,
+.hrst-option .hrst-option-form label.icon-right{
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hrst-option .hrst-option-form .icon-left,
+.hrst-option .hrst-option-form .icon-right{
+    margin: 0;
+}
+.hrst-option .hrst-option-form .icon-right{
+    margin-bottom: 13px;
+}
+.hrst-option .hrst-option-form select,
+.hrst-option .hrst-option-form input{
+    width: 60%;
+    padding: 6px 10px;
+    border: 1px solid var(--secondaryColor);
+    outline: 0;
+    -webkit-box-shadow: 0 0 5px var(--secondaryColor);
+            box-shadow: 0 0 5px var(--secondaryColor);
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.hrst-option .hrst-option-form select option{
+    font-weight: 600;
+}
+.hrst-option .hrst-option-form input#hrsthover,
+.hrst-option .hrst-option-form input#hrstbgcolor{
+    height: 80px;
+    width: 110px;
+    cursor: pointer;
+}
+.hrst-option .hrst-option-form input#hrstspeed{
+    height: 15px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    cursor: pointer;
+}
+.hrst-option .hrst-option-form input#hrstspeed::-webkit-slider-thumb{
+    -webkit-appearance: none;
+            appearance: none;
+    background: var(--primaryColor);
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+}
+.hrst-option .hrst-option-form .icon-left input,
+.hrst-option .hrst-option-form .icon-right input{
+    display: inline-block;
+    margin-bottom: 0;
+    width: 0;
+}
+.hrst-option .hrst-option-form form input[type=radio]:checked::before{
+    background-color: var(--primaryColor) !important;
+}
+.hrst-option .hrst-option-form small{
+    font-size: 13px;
+    color: #8b7a7a;
+    font-weight: 600;
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.hrst-option .hrst-option-form .img-small{
+    display: block;
+}
+
+.hrst-option .hrst-option-form .hrsticon{
+    display: inline-block;
+}
+.hrst-option .hrst-option-form .hrsticon img{
+    background: var(--primaryColor);
+    height: 50px;
+    width: 50px;
+    margin: 0 5px 5px 0;
+    border-radius: 8px;
+}
+.hrst-option .hrst-option-form .hrsticon img:active{
+    background-color: var(--secondaryColor);
+}
+
+.hrst-option-form form input[type="submit"]{
+    width: 180px;
+    padding: 8px 20px;
+    margin-top: 25px;
+    border: 2px solid var(--primaryColor);
+    color: var(--primaryColor);
+    background: var(--whiteColor);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .3px;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+.hrst-option-form form input[type="submit"]:hover{
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    border: 2px solid var(--primaryColor);
+}
+
+/* Author Details */
+.hrst-option .hrst-author{
+    padding: 20px;
+    -webkit-box-shadow: 0 0 8px var(--secondaryColor);
+            box-shadow: 0 0 8px var(--secondaryColor);
+    width: 30%;
+    float: right;
+    border-radius: 10px;
+}
+.hrst-option .hrst-author .author-img img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    border: 3px solid var(--primaryColor);
+}
+.hrst-option .hrst-author h4.author-name {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.hrst-option .hrst-author .author-description p{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+.hrst-option .hrst-author .donate-btn a{
+    text-decoration: none;
+}
+.hrst-option .hrst-author .donate-btn a h4{
+    padding: 8px 10px 12px;
+    text-align: center;
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    font-size: 23px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+.hrst-option .hrst-author .donate-btn a h4:hover{
+    color: var(--secondaryColor);
+}
+.hrst-option .hrst-author .donate-btn a h4 span{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.hrst-author h3.hrst-social-title{
+    margin: 20px 0;
+    font-size: 20px;
+    border-left: 4px solid var(--primaryColor);
+    height: 24px;
+    padding: 5px 0 0 8px;
+    border-radius: 5px;
+}
+.hrst-option .hrst-author .social-icons {
+    text-align: center;
+}
+.hrst-option .hrst-author .social-icons a{
+    text-decoration: none;
+    margin-right: 6px;
+    display: inline-block;
+}
+.hrst-option .hrst-author .social-icons a img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--primaryColor);
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    transition: .3s ease all;
+}
+.hrst-option .hrst-author .social-icons a img:hover{
+    background-color: var(--secondaryColor);
+}
+.hrst-option .hrst-author .thank-you{
+    text-align: center;
+    margin: 35px 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.hrst-option .hrst-author .thank-you span{
+    display: inline-block;
+    font-size: 35px;
+    color: red;
+}
+.hrst-option .hrst-author .thank-you h5{
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+/* Responsive Styles */
+@media only screen and (min-width: 776px) and (max-width: 1200px){
+    .hrst-option .hrst-option-form{
+        width: 55%;
+    }
+    .hrst-option .hrst-option-form select, 
+    .hrst-option .hrst-option-form input{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 777.99px){
+    .hrst-option .hrst-option-form{
+        width: 94%;
+        float: none;
+    }
+    .hrst-option .hrst-option-form select, 
+    .hrst-option .hrst-option-form input{
+        width: 61%;
+    }
+    .hrst-option .hrst-author{
+        width: 94%;
+        float: none;
+        margin: auto;
+        margin-top: 25px;
+    }
+    .hrst-option .hrst-option-form .icon-left input, 
+    .hrst-option .hrst-option-form .icon-right input{
+        margin-top: 0;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+    }
+    .hrst-option .hrst-option-form p.icon-left {
+        margin-bottom: 10px !important;
+    }
+    .hrst-option .hrst-option-form  input[type=radio]{
+        
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .hrst-option .hrst-option-form{
+        width: 85%;
+        margin: auto;
+    }
+    .hrst-option .hrst-author{
+        width: 85%;
+    }
+    .hrst-option .hrst-option-form select, 
+    .hrst-option .hrst-option-form input{
+        width: 90%;
+    }
+}
+

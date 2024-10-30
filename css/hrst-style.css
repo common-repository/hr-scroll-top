@@ -1,0 +1,57 @@
+/**
+*   @package hrscrolltop
+*
+*	HR Scroll Top Plugin Styles
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+.hrscroll-top a{
+	position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999;
+}
+.hrscroll-top a:focus,
+.hrscroll-top a:focus{
+	text-decoration: none;
+	color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.hrscroll-top a img{
+	background: #666;
+	height: 40px;
+	width: 40px;
+	border-radius: 6px;
+	cursor: pointer;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+}
+.hrscroll-top a img:hover{
+	background: #1abc9c;
+}
+
+
+.hrscroll-top a img.hrstimg1{
+    padding: 5px 6px 6px;
+}
+.hrscroll-top a img.hrstimg2{
+    padding: 6px;
+}
+.hrscroll-top a img.hrstimg3{
+    padding: 8px;
+}
+.hrscroll-top a img.hrstimg4{
+    padding: 5px;
+}
+.hrscroll-top a img.hrstimg5 {
+	padding: 3px;
+}
